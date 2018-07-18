@@ -13,7 +13,7 @@ namespace DbUp.Oracle
         /// <summary>
         /// Creates an instance of MySqlCommandReader
         /// </summary>
-        public OracleCommandReader(string sqlText) : base(sqlText, "/", delimiterRequiresWhitespace: false)
+        public OracleCommandReader(string sqlText) : base(sqlText, "/\r\n", delimiterRequiresWhitespace: false)
         {
         }
 
